@@ -1,0 +1,46 @@
+
+
+.trailer{
+    background-color: #000;
+
+    &__text{
+        text-align: center;
+        line-height: 50px;
+        padding-top: 20px;
+    }
+
+    &__poster{
+        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        background-color: #000;
+        img{
+            width:300px;
+            margin-top: 20px;
+        }
+    }
+    &__video{
+            display: block; 
+            margin: 0 auto; 
+            width: 1120px;
+            height: 630px; 
+    }
+
+
+    .video_esquerda {
+        position: relative; 
+        left: 65%;
+        top: 0;
+    }
+
+}
+
+h2, p{
+    font-family: Avenir, sans-serif;
+}
+
+
+
+
+

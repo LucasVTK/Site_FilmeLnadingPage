@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+
+
+.hero {
+    padding: 5.6vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(/dist/imagens/eu_bpan_showcase_ft_r_6560b952.jpeg);
+    background-size: cover; 
+    background-size: 100%;
+    font-family: Avenir, sans-serif;
+
+
+    &__content{
+        
+        
+        &__details{
+            margin-top: 20%;
+            max-width: 50%;
+            text-align: left;
+            position: absolute;
+            top: 0;
+            right: 0;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        
+    }
+}

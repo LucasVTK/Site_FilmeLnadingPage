@@ -1,0 +1,56 @@
+@use 'hero';
+@use 'variaveis';
+@use 'trailer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin text($fontsize: 16px){
+    font-size: $fontsize;
+    line-height: $fontsize + 10px;
+    color: variaveis.$TextoHero;
+}
+
+@mixin title($fontsize: 28px){
+    @include text($fontsize);
+    color: variveis.$corTextoETitulo
+}
+
+.text--big{
+    @include text(18px);
+}
+
+.text{
+    @include text();
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.title--big{
+    @include text(44px);
+}
+
+.title{
+    @include text(40);
+}
+
+.title--small{
+    @include text(28px);
+}
+
+@font-face {
+    font-family:Avenir;
+    src: url(../../fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
