@@ -1,0 +1,43 @@
+@use 'variaveis';
+
+.header {
+    position:sticky;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 1;
+
+    .link-logar {
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .link-logar--is-hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    
+
+    &__nav{
+        background-color: #5453;
+        padding: 25px;
+    }
+
+    &__links{
+        display: flex; 
+        gap: 20px; 
+        list-style: none;
+        justify-content: end;
+        align-items: center;
+        font-family: Avenir, sans-serif;
+        font-weight: bold;
+        
+        &__item a{
+        text-decoration: none;
+        font-size: 14px;
+        color: variaveis.$CorTextoHeader;
+        }
+    }
+}
+
+

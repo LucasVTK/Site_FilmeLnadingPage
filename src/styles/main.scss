@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'variaveis';
 @use 'trailer';
+@use 'header';
 
 *{
     margin: 0;
@@ -16,7 +17,7 @@
 
 @mixin title($fontsize: 28px){
     @include text($fontsize);
-    color: variveis.$corTextoETitulo
+    color: variveis.$corTextoETitulo;
 }
 
 .text--big{
@@ -53,4 +54,10 @@
     font-family: Avenir;
     src: url(../../fonts/Avenir-Bold.woff2);
     font-weight: 700;
+}
+
+.button{
+    padding: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }

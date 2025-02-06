@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <section class="header">
+        <div class="header__nav">
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="" class="text--small button link-logar">Logue e veja mais</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#trailer" class="text--small button">Trailer</a>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section class="hero">
         <div class="hero__content">
             <div class="hero__content__details">
@@ -17,34 +29,54 @@
             </div>
         </div>
     </section>
-    <section class="trailer">
+    <section class="trailer" id="trailer">
         <div class="trailer__text">
             <h2 class="title--big">Assista agora ao trailer (Legendado)</h2>
         </div>
         <iframe class="trailer__video" width="560" height="315" src="https://www.youtube.com/embed/wL4a4MafSjQ?si=bpp6CnZlhaPErtr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
-    <section class="trailer__poster">
+    <section class="trailer">
+    <div class="trailer__poster__title">
+        <h2 class="title" >Deseja assistir algum desses filmes? Logue e assista Agora!</h2>
+    </div>
+    <div class="trailer__poster">
+        
         <ul>
             <li>
-                <img src="./dist/imagens/537727.webp" alt="">
+                <img class="card" src="./dist/imagens/537727.webp" alt="">
             </li>
         </ul>
         <ul>
             <li>
-                <img src="./dist/imagens/DONfHyBV4AAnv8x.jpg" alt="">
+                <img class="card" src="./dist/imagens/DONfHyBV4AAnv8x.jpg" alt="">
             </li>
         </ul>
         <ul>
             <li>
-                <img src="./dist/imagens/gAfynPwx5e7YiQCUqISGyvLwhh6.jpg" alt="">
+                <img class="card" src="./dist/imagens/gAfynPwx5e7YiQCUqISGyvLwhh6.jpg" alt="">
             </li>
         </ul>
                 <ul>
             <li>
-                <img src="./dist/imagens/panteranegra_GQulmGn.jpg" alt="">
+                <img class="card" src="./dist/imagens/panteranegra_GQulmGn.jpg" alt="">
             </li>
         </ul>
-        
-    </section>
+    </div>
+</section>
+
+<!--<section class="atores">
+    <h2 class="title">Conheça os Atores</h2>
+    <ul class="atores__abrir">
+        <li class="atores__abrir__item">
+            <div class="atores__abrir__item__abri" data-faq-question>
+                Pergunta?
+            </div>
+            <div class="atores__abrir__item__answaer text--big">
+                A resposta da pergunta
+            </div>
+        </li>
+</section>
+</!-->
+<script src="./dist/js/main.js"></script>
 </body>
 </html>
