@@ -1,30 +1,52 @@
 @use 'variaveis';
 
-
-
 .hero {
-    padding: 5.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5vw;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-image: url(/dist/imagens/eu_bpan_showcase_ft_r_6560b952.jpeg);
-    background-size: cover; 
-    background-size: 100%;
+    background-size: cover;
     font-family: Avenir, sans-serif;
+    text-align: center;
+    
 
-
-    &__content{
-        
-        
-        &__details{
-            margin-top: 20%;
-            max-width: 50%;
-            text-align: left;
-            position: absolute;
-            top: 0;
-            right: 0;
-            justify-content: center;
-            margin-right: 20px;
-        }
-        
+    &__content {
+        max-width: 60%;
+        color: variaveis.$TextoHero;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
     }
+
+    &__content__details {
+        max-width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        &__content {
+            max-width: 80%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 10vw;
+        &__content {
+            max-width: 100%;
+            margin-bottom: 300px;
+
+            &__details p,
+            h2{
+                color: #fff;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+            background-image: url(/dist/imagens/celular.jpg);
+            background-size: cover;
+            background-position: center;
+}
 }
